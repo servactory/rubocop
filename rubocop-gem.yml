@@ -1,10 +1,7 @@
 require:
-  - rubocop-factory_bot
   - rubocop-performance
-  - rubocop-rails
   - rubocop-rake
   - rubocop-rspec
-  - rubocop-rspec_rails
 
 inherit_mode:
   merge:
@@ -13,8 +10,60 @@ inherit_mode:
 AllCops:
   NewCops: enable
 
+################################################################################
+
+Gemspec/DevelopmentDependencies:
+  Enabled: pending
+  EnforcedStyle: gemspec
+  SupportedStyles:
+    - Gemfile
+    - gems.rb
+    - gemspec
+  AllowedGems: [ ]
+  Include:
+    - '**/*.gemspec'
+    - '**/Gemfile'
+    - '**/gems.rb'
+
+################################################################################
+
+Metrics/ParameterLists:
+  Max: 12
+
+Naming/BlockForwarding:
+  Enabled: pending
+  EnforcedStyle: explicit
+  BlockForwardingName: block
+
+Naming/VariableNumber:
+  EnforcedStyle: snake_case
+
+Style/ArgumentsForwarding:
+  UseAnonymousForwarding: false
+
+Style/CaseEquality:
+  AllowOnConstant: true
+  AllowOnSelfClass: false
+
+Style/Documentation:
+  Enabled: false
+
 Style/HashSyntax:
   EnforcedShorthandSyntax: always
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+
+################################################################################
+
+RSpec/ExampleLength:
+  Max: 20
+
+RSpec/IndexedLet:
+  Max: 4
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 8
+
+RSpec/NestedGroups:
+  Max: 8
