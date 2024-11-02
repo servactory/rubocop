@@ -1,0 +1,64 @@
+require:
+  - rubocop-factory_bot
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+  - rubocop-rspec_rails
+
+inherit_mode:
+  merge:
+    - Exclude
+
+AllCops:
+  NewCops: enable
+
+################################################################################
+
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+  Exclude:
+    - config/application.rb
+
+Style/Documentation:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: always
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+################################################################################
+
+Rails/Output:
+  Exclude:
+    - db/**/*.rb
+
+################################################################################
+
+RSpec/EmptyExampleGroup:
+  Exclude:
+    - spec/requests/**/*.rb
+
+RSpec/ExampleLength:
+  Max: 20
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 16
+
+RSpec/NamedSubject:
+  EnforcedStyle: named_only
+
+RSpec/NestedGroups:
+  Max: 10
+
+RSpec/SpecFilePathFormat:
+  Include:
+    - "spec/**/*_spec.rb"
+  Exclude:
+    - "spec/requests/**/*_spec.rb"
+
+RSpec/VariableName:
+  AllowedPatterns:
+    - Authorization
