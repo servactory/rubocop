@@ -14,5 +14,8 @@ AllCops:
   DisabledByDefault: true
   NewCops: enable
 
+Style/HashSyntax:
+  EnforcedShorthandSyntax: always
+
 Style/StringLiterals:
   EnforcedStyle: double_quotes
