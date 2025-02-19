@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Anton Sokolov"]
   spec.email         = ["profox.rus@gmail.com"]
 
-  spec.summary       = "A set of tools for building reliable services of any complexity"
+  spec.summary       = "Servactory Ruby styling for Rails"
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/servactory/rubocop"
 
