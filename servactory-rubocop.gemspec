@@ -27,14 +27,14 @@ Gem::Specification.new do |spec|
   spec.files = Dir["rubocop-gem.yml", "rubocop-rails.yml"]
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = Gem::Requirement.new(">= 3.0.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 3.1.0")
 
-  spec.add_dependency "rubocop-factory_bot"
-  spec.add_dependency "rubocop-performance"
-  spec.add_dependency "rubocop-rails"
-  spec.add_dependency "rubocop-rake"
-  spec.add_dependency "rubocop-rspec"
-  spec.add_dependency "rubocop-rspec_rails"
+  spec.add_dependency "rubocop-factory_bot", ">= 2.26"
+  spec.add_dependency "rubocop-performance", ">= 1.24"
+  spec.add_dependency "rubocop-rails", ">= 2.30"
+  spec.add_dependency "rubocop-rake", ">= 0.7"
+  spec.add_dependency "rubocop-rspec", ">= 3.5"
+  spec.add_dependency "rubocop-rspec_rails", ">= 2.30"
 
   spec.add_development_dependency "rspec", "~> 3.12"
 end
