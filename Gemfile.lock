@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    servactory-rubocop (0.6.1)
+    servactory-rubocop (0.6.2)
       rubocop-factory_bot (>= 2.26)
       rubocop-performance (>= 1.24)
       rubocop-rails (>= 2.30)
